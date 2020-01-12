@@ -20,31 +20,31 @@ class ViewController: UIViewController {
         myView.backgroundColor = UIColor.yellow
         
         // set toạ độ và kích thước
-        myView.frame = CGRect(x: 80, y: 90, width: 200, height: 200)
-        
-        // set cho myView nằm ở tâm của super view (view)
-        // view là superview của class ViewController
-        myView.center = view.center
-        
-        myView2.backgroundColor = UIColor.purple
-        
-        // bo tròn
-        myView.layer.cornerRadius = 20
-        
-        // in ra toạ độ tâm của myView
-        print(myView.center)
-        myView2.frame = CGRect(x: myView.frame.size.width/2, y: myView.frame.size.height/2, width: 200, height: 200)
-        
-        
-        // màu đổ bóng
-        myView.layer.shadowColor = UIColor.red.cgColor
-        // độ trong suốt đổ bóng
-        myView.layer.shadowOpacity = 1
-        // khu vực đổ bóng, = .zezo đổ bóng cân UIView
-//        myView.layer.shadowOffset = CGSize.zero
-        myView.layer.shadowOffset = CGSize(width: -20, height: -10)
-        // bo tròn phần đổ bóng
-        myView.layer.shadowRadius = 10
+        myView.frame = CGRect(x: 80, y: 90, width: 300, height: 300)
+        myView2.frame = myView.bounds.insetBy(dx: 10, dy: 10)
+//        // set cho myView nằm ở tâm của super view (view)
+//        // view là superview của class ViewController
+//        myView.center = view.center
+//
+//        myView2.backgroundColor = UIColor.purple
+//
+//        // bo tròn
+//        myView.layer.cornerRadius = 20
+//
+//        // in ra toạ độ tâm của myView
+//        print(myView.center)
+//        myView2.frame = CGRect(x: myView.frame.size.width/2, y: myView.frame.size.height/2, width: 200, height: 200)
+//
+//
+//        // màu đổ bóng
+//        myView.layer.shadowColor = UIColor.red.cgColor
+//        // độ trong suốt đổ bóng
+//        myView.layer.shadowOpacity = 1
+//        // khu vực đổ bóng, = .zezo đổ bóng cân UIView
+////        myView.layer.shadowOffset = CGSize.zero
+//        myView.layer.shadowOffset = CGSize(width: -20, height: -10)
+//        // bo tròn phần đổ bóng
+//        myView.layer.shadowRadius = 10
     }
 
     func configProperties(){
