@@ -1,5 +1,5 @@
 
-# Buổi 6
+# Buổi 7
 
 # Bài tập về nhà
 - Viết ứng dụng tính chỉ số BMI (chỉ số khối của cơ thể)
@@ -16,7 +16,7 @@ Công thức:
 # Yêu cầu
     - Bài tập đẩy lên Github, gửi link bài tập qua Mail
     - Cú pháp gửi bài:
-        [BTVN-06] + Họ tên người gửi + lớp di động 4
+        [BTVN-07] + Họ tên người gửi + lớp di động 4
     - Gửi bài tập vào mail: quynh@techmaster.vn
     - Khuyến khích viết README.md mô tả repository của mình
 

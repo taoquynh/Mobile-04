@@ -48,6 +48,16 @@ class ViewController: UIViewController {
         
         // mặc định trạng thái state là .none
         state = .none
+        
+        // tap super view
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapWhenHideKeyboard))
+        view.addGestureRecognizer(gesture)
+    }
+    
+    // @objc là dấu hiệu sự kế thừa từ objective-C
+    @objc func tapWhenHideKeyboard(){
+        // ẩn (tụt) bàn phím
+        self.view.endEditing(true)
     }
     
     @IBAction func onPress(_ sender: Any) {
