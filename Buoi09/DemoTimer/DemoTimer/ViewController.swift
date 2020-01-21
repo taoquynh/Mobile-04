@@ -29,7 +29,12 @@ class ViewController: UIViewController {
     // khai báo 1 hàm kế thừa objective-C
     @objc func runTimer(){
         dem += 1
-        print(dem)
+        print("Ta đếm \(dem)")
+        if dem >= 100 {
+            // hàm dừng thời gian
+            // lưu ý: thời gian mà được start thì phải stop (invalidate) để dừng thời gian, nếu không nó sẽ không bị huỷ dù ViewController có bị huỷ
+            timer.invalidate()
+        }
     }
 }
 
