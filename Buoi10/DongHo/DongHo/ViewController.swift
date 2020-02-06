@@ -84,6 +84,7 @@ class ViewController: UIViewController {
         let minute = calendar.component(.minute, from: currentDate as Date)
         let second = calendar.component(.second, from: currentDate as Date)
         print(hour, minute, second) // in ra thời gian thực
+        
         let hourInAboutSecond = hour*60*60 + minute*60 + second
         let minuteInAboutSecond = minute*60 + second
         
